@@ -40,7 +40,7 @@
         <h1>NuCamp</h1>
         <h2>a better way to camp</h2>
       </div>
-      <div class="col col-md-4 col-xs-2 mt-4">
+      <div class="col col-md-4 col-xl-2 mt-4">
         <a class="text-nowrap"> </a>
         <button type="submit" class="btn btn-info btn-lg">
           Reserve Campsite
@@ -173,10 +173,16 @@
           <div class="card-body">
             <form>
               <div class="row form-group">
-                <label class="col-sm col-form-label"> Number of Campers</label>
+                <label class="col-sm upviewport() col-form-label">
+                  Number of Campers</label
+                >
                 <div class="col-sm-6">
-                  <select class="form-control" id="numCampers">
-                    <option>Select</option>
+                  <select
+                    class="form-control"
+                    name="numCampers"
+                    id="numCampers"
+                  >
+                    <option>Select...</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -188,11 +194,15 @@
               </div>
               <div class="row form-group">
                 <label class="col-sm-6 col-form-label" for="date">Date</label>
-                <input id="date" />
                 <!--keep an eye on for=id or input-->
                 <div class="col-sm-6">
-                  <input class="form-control" type="date" name="date" />
-                  <!--fix placeholder-->
+                  <input
+                    id="date"
+                    class="form-control"
+                    type="date"
+                    name="date"
+                    placeholder="mm/dd/yyyy"
+                  />
                 </div>
                 <div class="row form-group">
                   <div class="col">
